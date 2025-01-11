@@ -1,0 +1,26 @@
+@media screen and (min-width: 768px) {
+    header div h1{
+        font-size: 3rem;
+    }
+
+    .navIcon {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main {
+        grid-template: min-content min-content / 2fr 1fr;
+    }
+
+    main section#certificate div#certFilters span {
+        flex: 0 1 10%;
+    }
+
+    main section#certificate {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+}
