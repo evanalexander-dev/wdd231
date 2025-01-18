@@ -1,0 +1,58 @@
+{
+  "members": [
+    {
+      "name": "Amazon",
+      "address": "410 Terry Ave N, Seattle, WA 98109",
+      "phone": "206-266-1000",
+      "website": "https://www.amazon.com",
+      "image": "images/amazon.webp",
+      "level": 3
+    },
+    {
+      "name": "Wells Fargo",
+      "address": "420 Montgomery St, San Francisco, CA 94104",
+      "phone": "800-869-3557",
+      "website": "https://wellsfargo.com",
+      "image": "images/wellsfargo.webp",
+      "level": 3
+    },
+    {
+      "name": "King Soopers",
+      "address": "65 Tejon St, Denver, CO 80223",
+      "phone": "303-778-3100",
+      "website": "https://www.kingsoopers.com",
+      "image": "images/kingsoopers.webp",
+      "level": 2
+    },
+    {
+      "name": "Safeway",
+      "address": "5918 Stoneridge Mall Rd, Pleasanton, CA 94588",
+      "phone": "925-467-3000",
+      "website": "https://www.safeway.com",
+      "image": "images/safeway.webp",
+      "level": 2
+    },
+    {
+      "name": "United",
+      "address": "233 South Wacker Drive, Chicago, IL 60606",
+      "phone": "800-864-8331",
+      "website": "https://www.united.com",
+      "image": "images/united.webp",
+      "level": 2
+    },{
+      "name": "Costco",
+      "address": "999 Lake Dr, Issaquah, WA 98027",
+      "phone": "425-313-8100",
+      "website": "https://www.costco.com",
+      "image": "images/costco.webp",
+      "level": 1
+    },{
+      "name": "Google",
+      "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043",
+      "phone": "650-253-0000",
+      "website": "https://www.google.com",
+      "image": "images/google.webp",
+      "level": 1
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+@media screen and (min-width: 1024px) {
+    header {
+        grid-template: auto / auto min-content min-content;
+        justify-content: unset;
+    }
+
+    #siteTitle {
+        padding: 1rem;
+    }
+
+    nav {
+        grid-area: unset;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #headerIcons {
+        padding: 1rem;
+    }
+
+    #navIcon {
+        display: none !important;
+    }
+
+    #directory {
+        flex-direction: row;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,203 @@
+:root {
+    --primary-color: #c2351b;
+    --secondary-color: #2c3e50;
+    --bg-color: #bbb;
+    --font-color: #000;
+    --accent-background-color: #999;
+    --accent-font-color: #000;
+    --card-background-color: #fff;
+    --card-border-color: #ddd;
+    --card-font-color: #000;
+    --link-color: #049;
+}
+
+[data-theme="dark"] {
+    --primary-color: #681d0f;
+    --secondary-color: #6893bf;
+    --bg-color: #222;
+    --font-color: #ddd;
+    --accent-background-color: #444;
+    --accent-font-color: #ddd;
+    --card-background-color: #555;
+    --card-border-color: #444;
+    --card-font-color: #fff;
+    --link-color: #bef;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    width: 100vw;
+    height: 100vh;
+    font-family: Roboto, sans-serif;
+    overflow-x: hidden;
+    display: grid;
+    grid-template: min-content auto min-content / auto;
+}
+
+header {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--accent-background-color);
+    color: var(--accent-font-color);
+    display: grid;
+    align-items: center;
+    grid-template: auto auto / auto min-content;
+    justify-content: space-between;
+}
+
+#siteTitle {
+    padding: .5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#siteTitle img {
+    width: 3rem;
+    height: auto;
+    margin-right: .5rem;
+}
+
+#siteTitle h1 {
+    margin: 0;
+}
+
+nav {
+    grid-area: 2/1/3/3;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navActive {
+    display: flex;
+}
+
+nav a {
+    flex: 1 1 100%;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.25s;
+    color: var(--accent-font-color);
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+nav a.activePage {
+    text-decoration: underline;
+}
+
+#headerIcons {
+    padding: .5rem;
+    text-wrap: nowrap;
+}
+
+#headerIcons button {
+    all: unset;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding-left: .25rem;
+}
+
+main {
+    margin: 1rem;
+}
+
+#directoryFilters {
+    text-align: center;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--accent-background-color);
+}
+
+#directoryFilters button {
+    all: unset;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+    border-radius: .5rem;
+    padding: .5rem;
+    margin: .25rem;
+}
+
+.directoryFilterActive {
+    filter: hue-rotate(-45deg) !important;
+}
+
+#directory {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+#directory table {
+    width: 100%;
+    box-sizing: border-box;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#directory table tr td {
+    padding: .5rem;
+}
+
+#directory table tr:nth-child(even) {
+    background-color: var(--accent-background-color);
+}
+
+#directory a {
+    all: unset;
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--link-color);
+}
+
+#directory section {
+    flex: 1 1 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card-background-color);
+    color: var(--card-font-color);
+    border: 1px solid var(--card-border-color);
+    border-radius: 1rem;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--accent-background-color);
+    color: var(--accent-font-color);
+}
+
+footer div {
+    padding: 1rem;
+}
+
+#footerContact span {
+    font-weight: bold;
+}
+
+#footerSocials {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footerSocials a {
+    background-color: var(--primary-color);
+    fill: var(--font-color);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
