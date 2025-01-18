@@ -16,6 +16,7 @@ main {
 
 div#cards {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1rem;
     background-color: #888;
