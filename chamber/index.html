@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory | Colorado Chamber of Commerce</title>
+    <title>Home | Colorado Chamber of Commerce</title>
     <meta name="author" content="Evan Alexander">
-    <meta name="description" content="Colorado Chamber of Commerce's Directory of Businesses">
+    <meta name="description" content="Colorado Chamber of Commerce's Home Page">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <meta property="og:title" content="Colorado Chamber of Commerce Directory">
+    <meta property="og:title" content="Colorado Chamber of Commerce Home Page">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://evanalexander-dev.github.io/wdd231/chamber/images/colorado.webp">
-    <meta property="og:url" content="https://evanalexander-dev.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://evanalexander-dev.github.io/wdd231/chamber">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
     <script defer src="scripts/header.js"></script>
-    <script defer src="scripts/directory.js"></script>
+    <script defer src="scripts/index.js"></script>
     <script defer src="scripts/footer.js"></script>
 </head>
 <body>
@@ -28,8 +28,8 @@
         </div>
     </div>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="directory.html" class="activePage">Directory</a>
+        <a href="index.html" class="activePage">Home</a>
+        <a href="directory.html">Directory</a>
         <a href="join.html">Join</a>
         <a href="discover.html">Discover</a>
     </nav>
@@ -70,11 +70,37 @@
         <button id="navIcon">☰</button>
     </div>
 </header>
-<main id="directoryPage">
-    <h2>Business Directory</h2>
-    <div id="directoryFilters">
-        <button id="directoryGridButton" class="directoryFilterActive">⏹️</button>
-        <button id="directoryListButton">📃</button>
+<main id="homePage">
+    <div class="hero">
+        <img src="images/hero.webp" alt="Workers standing by an excavator looking over a cliff">
+        <a href="#">Join Us</a>
+    </div>
+    <h2 id="home-title">Home</h2>
+    <div class="home-content">
+        <div class="events">
+            <h3>Events</h3>
+        </div>
+        <div class="current-weather">
+            <h3>Current Weather</h3>
+            <div>
+                <img src="" alt="" id="weather-icon">
+                <div>
+                    <p><b><span id="weather-current"></span></b>ºF</p>
+                    <p><span id="weather-description"></span></p>
+                    <p>High: <span id="weather-high"></span>º</p>
+                    <p>Low: <span id="weather-low"></span>º</p>
+                    <p>Humidity: <span id="weather-humidity"></span>%</p>
+                    <p>Sunrise: <span id="weather-sunrise"></span>am</p>
+                    <p>Sunset: <span id="weather-sunset"></span>pm</p>
+                </div>
+            </div>
+        </div>
+        <div class="weather-forecast">
+            <h3>Weather Forecast</h3>
+            <p><span id="weather-today"></span><b>ºF</b></p>
+            <p><span id="weather-tomorrow"></span><b>ºF</b></p>
+            <p><span id="weather-overmorrow"></span><b>ºF</b></p>
+        </div>
     </div>
     <div class="directory"></div>
 </main>

@@ -1,6 +1,6 @@
 const gridButton = document.querySelector('#directoryGridButton');
 const listButton = document.querySelector('#directoryListButton');
-const directoryDiv = document.querySelector('#directory');
+const directoryDiv = document.querySelector('.directory');
 
 gridButton.addEventListener('click', () => {
     displayMembers('grid');
