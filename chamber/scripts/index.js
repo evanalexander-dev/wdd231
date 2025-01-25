@@ -25,7 +25,7 @@ const sunrise = document.getElementById('weather-sunrise');
 const sunset = document.getElementById('weather-sunset');
 
 function displayWeather(data) {
-    weatherIcon.setAttribute('src', `https://openweathermap.org/img/w/${data.weather[0].icon}.png`);
+    weatherIcon.setAttribute('src', `https://openweathermap.org/img/w/${data.weather[0].icon}@2x.png`);
     weatherIcon.setAttribute('alt', data.weather[0].description);
     currentTemp.innerHTML = `<b>${data.main.temp}</b>`;
     description.textContent = data.weather[0].description.replace(/\b[a-z]/g, t => t.toUpperCase());
