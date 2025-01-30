@@ -87,6 +87,24 @@ function nav() {
     }
 }
 
+const courseDetails = document.querySelector('dialog');
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+    
+    let closeModal = document.querySelector('#closeModal');
+    closeModal.addEventListener('click', () => courseDetails.close())
+}
+
 const courseDiv = document.querySelector('div#certCourses');
 const creditSpan = document.querySelector('span#credits');
 function updateCourses(filter = "All") {
@@ -106,6 +124,10 @@ function updateCourses(filter = "All") {
     courseDiv.innerHTML = coursesToDisplay.map(
         course => `<span${course.completed ? ' class="complete"' : ''}>${course.subject} ${course.number}</span>`
     ).join('');
+    
+    for (let i = 0; i < coursesToDisplay.length; i++) {
+        courseDiv.children[i].addEventListener('click', () => displayCourseDetails(coursesToDisplay[i]));
+    }
     
     creditSpan.innerHTML = `Credits: ${coursesToDisplay.reduce((value, course) => value + course.credits, 0)}`;
 }
