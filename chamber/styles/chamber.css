@@ -9,6 +9,7 @@
     --card-border-color: #ddd;
     --card-font-color: #000;
     --link-color: #049;
+    --button-font-color: #fff;
 }
 
 [data-theme="dark"] {
@@ -22,6 +23,7 @@
     --card-border-color: #444;
     --card-font-color: #fff;
     --link-color: #bef;
+    --button-font-color: #000;
 }
 
 body {
@@ -367,7 +369,7 @@ form {
 
 .learnMore {
     background: var(--secondary-color);
-    color: #fff;
+    color: var(--button-font-color);
     border: 1px solid var(--card-border-color);
     padding: 5px 10px;
     border-radius: 3px;
