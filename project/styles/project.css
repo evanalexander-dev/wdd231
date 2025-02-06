@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+:root {
+    --bg: #0A2E36;
+    --text: #F6E8EA;
+    --header-text: #B3EFB2;
+    --accent-bg: #67AAF9;
+    --accent-text: #000;
+}
+
+#sitePlanPage {
+    margin: 1rem;
+
+    h3 {
+        padding-top: .75rem;
+    }
+
+    p {
+        padding-left: 1rem;
+    }
+
+    ul {
+        padding-left: 2.5rem;
+    }
+
+    img {
+        padding: 1rem;
+        border: 5px solid var(--text);
+    }
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--header-text);
+}
