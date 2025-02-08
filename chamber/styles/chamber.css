@@ -310,9 +310,16 @@ form {
         color: var(--card-font-color);
     }
 
-    input:required {border-left-color: red;}
-    input:focus {border-left-color: black; outline:none;}
-    input:required:valid{border-left-color: green;}
+    input:required {
+        border-left-color: red;
+    }
+    input:focus {
+        border-left-color: black;
+        outline:none;
+    }
+    input:required:valid {
+        border-left-color: green;
+    }
 
     textarea {
         display: block;
