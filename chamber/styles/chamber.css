@@ -289,61 +289,59 @@ nav a.activePage {
     margin: 1rem;
 }
 
-form {
-    label {
-        display: block;
-        padding-top: 0.5rem;
-        font-size: 0.9rem;
-    }
+form label {
+    display: block;
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+}
 
-    input, select {
-        display: block;
-        box-sizing: border-box;
-        padding: .3rem;
-        height: 2rem;
-        width: 100%;
-        max-width: 400px;
-        border: 1px solid var(--card-border-color);
-        border-radius: 6px;
-        border-left-width: 5px;
-        background-color: var(--card-background-color);
-        color: var(--card-font-color);
-    }
+form input, form select {
+    display: block;
+    box-sizing: border-box;
+    padding: .3rem;
+    height: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--card-border-color);
+    border-radius: 6px;
+    border-left-width: 5px;
+    background-color: var(--card-background-color);
+    color: var(--card-font-color);
+}
 
-    input:required {
-        border-left-color: red;
-    }
-    input:focus {
-        border-left-color: black;
-        outline:none;
-    }
-    input:required:valid {
-        border-left-color: green;
-    }
+form input:required {
+    border-left-color: red;
+}
+form input:focus {
+    border-left-color: black;
+    outline:none;
+}
+form input:required:valid {
+    border-left-color: green;
+}
 
-    textarea {
-        display: block;
-        box-sizing: border-box;
-        padding: .3rem;
-        height: 5rem;
-        width: 100%;
-        max-width: 400px;
-        border: 1px solid var(--card-border-color);
-        border-radius: 6px;
-        background-color: var(--card-background-color);
-        color: var(--card-font-color);
-    }
+form textarea {
+    display: block;
+    box-sizing: border-box;
+    padding: .3rem;
+    height: 5rem;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--card-border-color);
+    border-radius: 6px;
+    background-color: var(--card-background-color);
+    color: var(--card-font-color);
+}
 
-    button[type="submit"] {
-        border: none;
-        background-image: linear-gradient(var(--card-border-color), var(--card-border-color));
-        border-radius: 6px;
-        height: 3rem;
-        width: 100%;
-        max-width: 400px;
-        margin-top: 1rem;
-        color: var(--card-font-color);
-    }
+form button[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--card-border-color), var(--card-border-color));
+    border-radius: 6px;
+    height: 3rem;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 1rem;
+    color: var(--card-font-color);
 }
 
 .memberships {
