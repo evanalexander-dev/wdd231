@@ -15,23 +15,23 @@
 
 #sitePlanPage {
     margin: 1rem;
+}
 
-    h3 {
-        padding-top: .75rem;
-    }
+#sitePlanPage h3 {
+    padding-top: .75rem;
+}
 
-    p {
-        padding-left: 1rem;
-    }
+#sitePlanPage p {
+    padding-left: 1rem;
+}
 
-    ul {
-        padding-left: 2.5rem;
-    }
+#sitePlanPage ul {
+    padding-left: 2.5rem;
+}
 
-    img {
-        padding: 1rem;
-        border: 5px solid var(--text);
-    }
+#sitePlanPage img {
+    padding: 1rem;
+    border: 5px solid var(--text);
 }
 
 body {
