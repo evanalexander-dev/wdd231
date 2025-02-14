@@ -39,6 +39,11 @@
         flex-direction: row;
     }
 
+    #discoverItems {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     footer {
         flex-direction: row;
     }

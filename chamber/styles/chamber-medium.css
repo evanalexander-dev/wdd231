@@ -1,3 +1,18 @@
 @media screen and (min-width: 640px) {
+    #discoverItems div {
+        grid-template-areas:
+        "title title"
+        "image description"
+        "image address"
+        "button button";
+    }
 
+    #discoverItems div img {
+        width: 300px;
+        transition: scale 0.25s;
+    }
+
+    #discoverItems div img:hover {
+        scale: 105%;
+    }
 }

@@ -429,6 +429,73 @@ form button[type="submit"] {
 }
 /* END thankyou.html */
 
+/* START discover.html */
+#discoverPage span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--button-font-color);
+}
+
+#discoverPage h2 {
+    margin: 1rem;
+}
+
+#discoverItems div {
+    margin: 1rem 8px;
+    border: 1px solid var(--card-border-color);
+    background-color: var(--card-background-color);
+    color: var(--card-font-color);
+    border-radius: 1rem;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas:
+    "title"
+    "image"
+    "description"
+    "address"
+    "button";
+}
+
+#discoverItems div h2 {
+    margin: 1rem 10px;
+    grid-area: title;
+}
+
+#discoverItems div img {
+    width: 100%;
+    grid-area: image;
+}
+
+#discoverItems div p {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+#discoverItems div address {
+    margin: 1rem 16px;
+    grid-area: address;
+}
+
+#discoverItems div button {
+    all: unset;
+    cursor: pointer;
+    width: calc(100% - 16px);
+    box-sizing: border-box;
+    text-align: center;
+    margin: 1rem 8px;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--button-font-color);
+    border: 1px solid var(--card-border-color);
+    border-radius: 2.5rem;
+    grid-area: button;
+}
+/* END discover.html */
+
 footer {
     display: flex;
     flex-direction: column;
