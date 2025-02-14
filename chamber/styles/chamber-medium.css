@@ -9,10 +9,10 @@
 
     #discoverItems div img {
         width: 300px;
-        transition: scale 0.25s;
+        transition: box-shadow 0.25s;
     }
 
     #discoverItems div img:hover {
-        scale: 105%;
+        box-shadow: 9px 9px 21px rgba(0, 0, 0, 0.3);
     }
 }
