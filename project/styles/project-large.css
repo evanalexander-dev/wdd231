@@ -1,0 +1,43 @@
+@media screen and (min-width: 1024px) {
+    header {
+        justify-content: space-between;
+        padding: 0 .5rem;
+    }
+
+    header h1 {
+        display: unset;
+    }
+
+    #controlPage {
+        grid-template: auto / 1fr 2fr 3fr 1fr;
+    }
+
+    #controlPage section#actionSection {
+        grid-area: 1/2/2/3;
+    }
+
+    #controlPage section#logSection {
+        grid-area: 1/3/2/4;
+    }
+
+    #schedulePage {
+        grid-template: auto / 1fr 5fr 1fr;
+    }
+
+    #schedulePage section {
+        grid-area: 1/2/2/3;
+    }
+
+    #settingsPage form {
+        grid-template: min-content auto / 1fr 1fr;
+    }
+
+    #settingsPage button {
+        grid-area: 2/1/3/3;
+    }
+
+    #confirmPage {
+        display: flex;
+        justify-content: center;
+    }
+}

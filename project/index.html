@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control | Webcast | WDD 231</title>
+    <meta name="author" content="Evan Alexander">
+    <meta name="description" content="Control page for a Webcast Pi">
+    <meta property="og:title" content="Webcast Control">
+    <meta property="og:description" content="Control page to start, stop, restart, and check status of a Webcast Pi">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://evanalexander-dev.github.io/wdd231/project/index.html">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script type="module" src="scripts/project.js"></script>
+    <script type="module" src="scripts/control.js"></script>
+</head>
+<body>
+<header>
+    <h1>Control</h1>
+    <nav>
+        <a href="index.html" class="activePage">🎛️</a>
+        <a href="schedule.html">🕒</a>
+        <a href="settings.html">⚙️</a>
+    </nav>
+</header>
+<main id="controlPage">
+    <section id="actionSection">
+        <h2>Actions</h2>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="restart">Restart</button>
+    </section>
+    <section id="logSection">
+        <h2>Logs</h2>
+        <p id="logs"></p>
+    </section>
+</main>
+<footer class="streaming"></footer>
+</body>
+</html>

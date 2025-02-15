@@ -6,15 +6,22 @@
 }
 
 :root {
-    --bg: #0A2E36;
-    --text: #F6E8EA;
-    --header-text: #B3EFB2;
-    --accent-bg: #67AAF9;
-    --accent-text: #000;
+    --bg: #adf;
+    --text: #000;
+    --header-text: #252;
+    --accent-bg: #0A2E36;
+    --accent-text: #F6E8EA;
+    --nav-bg: #3578C7;
+    --nav-active-bg: #639558;
+    --nav-border: #000;
+    --streaming-bg: #78f078;
+    --streaming-text: #000;
 }
 
 #sitePlanPage {
-    margin: 1rem;
+    background-color: var(--bg);
+    color: var(--text);
+    padding: 1rem;
 }
 
 #sitePlanPage h3 {
@@ -34,11 +41,245 @@
     border: 5px solid var(--text);
 }
 
-body {
-    background-color: var(--bg);
-    color: var(--text);
+header {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--accent-bg);
+}
+
+header h1 {
+    color: var(--accent-text);
+    display: none;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    all: unset;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: .25rem;
+    margin: 0 .4rem;
+    background-color: var(--nav-bg);
+    border-radius: .5rem;
+}
+
+header nav a.activePage {
+    background-color: var(--nav-active-bg);
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--header-text);
+}
+
+body {
+    background-color: var(--bg);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: grid;
+    grid-template: min-content auto min-content / auto;
+}
+
+main {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* START index.html */
+#controlPage {
+    display: grid;
+    grid-template: min-content min-content / auto;
+}
+
+#controlPage section {
+    padding: 1rem;
+}
+
+#controlPage section#actionSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#controlPage section#actionSection button {
+    all: unset;
+    cursor: pointer;
+    text-align: center;
+    padding: 1rem 0;
+    border: 1px solid var(--text);
+    border-radius: 2.5rem;
+}
+
+#controlPage section#actionSection button#start {
+    background-color: #4d4;
+}
+
+#controlPage section#actionSection button#stop {
+    background-color: #d44;
+}
+
+#controlPage section#actionSection button#restart {
+    background-color: #0a4696;
+    color: #fff;
+}
+
+#controlPage section#logSection p {
+    padding: .75rem;
+    margin: .5rem 0;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 1rem;
+}
+/* END index.html*/
+
+/* START schedule.html */
+#schedulePage {
+    display: grid;
+    grid-template: min-content / auto;
+}
+
+#schedulePage section {
+    padding: 1rem;
+}
+
+#schedulePage section div#upcomingEvents {
+    margin: .5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+#schedulePage section div#upcomingEvents div {
+    cursor: pointer;
+    background-color: #ddd;
+    color: #000;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+#eventDetails {
+    border: 1px solid #222;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: 0 0 3rem #888;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+#eventDetails::backdrop {
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+#eventDetails button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+}
+/* END schedule.html */
+
+/* START settings.html */
+#settingsPage section {
+    padding: 1rem;
+}
+
+#settingsPage form {
+    display: grid;
+    grid-template: min-content  min-content auto / auto;
+}
+
+#settingsPage fieldset {
+    border: none;
+    padding: 0 1rem;
+}
+
+#settingsPage label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#settingsPage input, #settingsPage select {
+    width: 100%;
+    height: 2.5rem;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#settingsPage button {
+    width: calc(100% - 2rem);
+    padding: 10px;
+    margin: 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#settingsPage section:last-of-type {
+    text-align: center;
+}
+
+#settingsPage section:last-of-type h2 {
+    padding-bottom: .5rem;
+}
+
+#settingsPage section:last-of-type img {
+    width: min(90vw, 960px);
+    height: auto;
+}
+/* END settings.html */
+
+/* START confirm.html */
+#confirmPage section {
+    padding: 1rem;
+}
+
+#confirmPage section h2 {
+    padding-bottom: .5rem;
+}
+
+#confirmPage section div {
+    padding-left: .5rem;
+}
+
+#confirmPage section div p {
+    padding: .25rem 0;
+}
+/* END confirm.html */
+
+footer {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--accent-bg);
+    color: var(--accent-text);
+    position: sticky;
+    bottom: -1px;
+}
+
+footer::before {
+    content: "Not Streaming";
+}
+
+footer.streaming {
+    background-color: var(--streaming-bg);
+    color: var(--streaming-text);
+}
+
+footer.streaming::before {
+    content: "Streaming";
 }

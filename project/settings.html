@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings | Webcast | WDD 231</title>
+  <meta name="author" content="Evan Alexander">
+  <meta name="description" content="Settings page for a Webcast Pi">
+  <meta property="og:title" content="Webcast Settings">
+  <meta property="og:description" content="Settings page to edit settings for a Webcast Pi">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://evanalexander-dev.github.io/wdd231/project/settings.html">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="stylesheet" href="styles/project-large.css">
+  <script type="module" src="scripts/project.js"></script>
+  <script type="module" src="scripts/settings.js"></script>
+</head>
+<body>
+<header>
+  <h1>Settings</h1>
+  <nav>
+    <a href="index.html">🎛️</a>
+    <a href="schedule.html">🕒</a>
+    <a href="settings.html" class="activePage">⚙️</a>
+  </nav>
+</header>
+<main id="settingsPage">
+  <section>
+    <h2>Edit Settings</h2>
+    <form action="confirm.html" method="get">
+      <fieldset>
+        <label for="auto">Stream Source:</label>
+        <select id="auto" name="auto">
+          <option value="true">YouTube</option>
+          <option value="false">RTMP</option>
+        </select>
+        <label>RTMP URL: <input type="text" id="rtmpurl" name="rtmpurl"></label>
+        <label>RTMP Key: <input type="password" id="rtmpkey" name="rtmpkey"></label>
+        <label>Preset:
+        <select id="preset" name="preset">
+          <option value="ultrafast">Ultrafast</option>
+          <option value="superfast">Superfast</option>
+          <option value="veryfast">Veryfast</option>
+          <option value="faster">Faster</option>
+          <option value="fast">Fast</option>
+          <option value="medium">Medium</option>
+        </select>
+        </label>
+        <label>Resolution:
+          <select id="resolution" name="resolution">
+            <option value="1920x1080">1920x1080</option>
+            <option value="1280x720">1280x720</option>
+            <option value="800x600">800x600</option>
+            <option value="640x480">640x480</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Audio Bitrate: <input type="number" id="abitrate" name="abitrate"></label>
+        <label>Audio Delay (s): <input type="number" step="0.01" id="audioDelay" name="audioDelay"></label>
+        <label>Video Bitrate: <input type="number" id="vbitrate" name="vbitrate"></label>
+        <label>Video Delay (s): <input type="number" id="videoDelay" name="videoDelay"></label>
+        <label>Volume Gain (dB): <input type="number" id="volume" name="volume"></label>
+      </fieldset>
+      <button type="submit">Save Settings</button>
+    </form>
+  </section>
+  <section>
+    <h2>Wiring Diagram</h2>
+    <img src="images/diagram.webp" alt="Webcast Wiring Diagram" loading="lazy">
+  </section>
+</main>
+<footer></footer>
+</body>
+</html>
